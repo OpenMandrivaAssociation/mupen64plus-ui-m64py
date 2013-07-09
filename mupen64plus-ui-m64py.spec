@@ -41,7 +41,8 @@ cp xdg/%{oname}.png %{buildroot}%{_iconsdir}/hicolor/96x96/mimetypes/application
 %{_iconsdir}/hicolor/96x96/mimetypes/application-x-%{oname}.png
 %{_datadir}/mime/packages/application-x-%{oname}.xml
 %{_datadir}/pixmaps/%{oname}.png
-%{py_platsitedir}/%{oname}
-%{py_platsitedir}/SDL
-%{py_platsitedir}/%{oname}-*.egg-info
+%{py_puresitedir}/%{oname}
+%{py_puresitedir}/SDL
+%{py_puresitedir}/%{oname}-*.egg-info
+
 
