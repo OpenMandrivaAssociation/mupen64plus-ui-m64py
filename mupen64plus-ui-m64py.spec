@@ -13,6 +13,7 @@ Group:		Emulators
 Url:		http://m64py.sourceforge.net
 Source0:	http://sourceforge.net/projects/m64py/files/%{oname}-%{version}/%{oname}-%{version}.tar.gz
 BuildRequires:	python-setuptools
+BuildRequires:	PyQt4
 Requires:	PyQt4
 Requires:	mupen64plus >= 2.0
 
