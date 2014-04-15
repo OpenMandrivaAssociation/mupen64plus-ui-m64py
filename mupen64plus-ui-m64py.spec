@@ -6,7 +6,7 @@
 
 Summary:	M64Py - A frontend for Mupen64Plus
 Name:		mupen64plus-ui-%{oname}
-Version:	0.2.0
+Version:	0.2.1
 Release:	1
 License:	GPLv3+
 Group:		Emulators
