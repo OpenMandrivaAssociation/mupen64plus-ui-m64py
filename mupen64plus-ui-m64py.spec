@@ -39,8 +39,8 @@ it provides a user-friendly interface over Mupen64Plus shared library.
 %{_iconsdir}/hicolor/96x96/mimetypes/application-x-%{oname}.png
 %{_datadir}/mime/packages/application-x-%{oname}.xml
 %{_datadir}/pixmaps/%{oname}.png
-%{py2_puresitedir}/%{oname}
-%{py2_puresitedir}/%{oname}-*.egg-info
+%{py_puresitedir}/%{oname}
+%{py_puresitedir}/%{oname}-*.egg-info
 
 %prep
 %setup -q -n %{oname}-%{version}
