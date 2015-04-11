@@ -12,7 +12,8 @@ License:	GPLv3+
 Group:		Emulators
 Url:		http://m64py.sourceforge.net
 Source0:	http://sourceforge.net/projects/m64py/files/%{oname}-%{version}/%{oname}-%{version}.tar.gz
-BuildRequires:	python-setuptools
+BuildRequires:	python2-setuptools
+BuildRequires:	python2-devel
 BuildRequires:	python-qt4-devel
 BuildRequires:	pkgconfig(icu-i18n)
 
@@ -30,8 +31,8 @@ it provides a user-friendly interface over Mupen64Plus shared library.
 %{_iconsdir}/hicolor/96x96/mimetypes/application-x-%{oname}.png
 %{_datadir}/mime/packages/application-x-%{oname}.xml
 %{_datadir}/pixmaps/%{oname}.png
-%{py_puresitedir}/%{oname}
-%{py_puresitedir}/%{oname}-*.egg-info
+%{py2_puresitedir}/%{oname}
+%{py2_puresitedir}/%{oname}-*.egg-info
 
 %prep
 %setup -q -n %{oname}-%{version}
@@ -40,6 +41,9 @@ sed s,"/usr/lib/mupen64plus","%{_libdir}/mupen64plus2",g -i src/m64py/platform.p
 #----------------------------------------------------------------------------
 
 %build
+ln -s %{_bindir}/python2 python
+export PATH=`pwd`:$PATH
+
 python setup.py build
 
 %install
