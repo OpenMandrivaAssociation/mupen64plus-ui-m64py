@@ -14,10 +14,18 @@ Url:		http://m64py.sourceforge.net
 Source0:	http://sourceforge.net/projects/m64py/files/%{oname}-%{version}/%{oname}-%{version}.tar.gz
 BuildRequires:	python2-setuptools
 BuildRequires:	python2-devel
+BuildRequires:	python2-qt4-core
+BuildRequires:	python2-qt4-declarative
+BuildRequires:	python2-qt4-multimedia
+BuildRequires:	python2-qt4-network
+BuildRequires:	python2-qt4-opengl
+BuildRequires:	python2-qt4-script
+BuildRequires:	python2-qt4-scripttools
+
 BuildRequires:	python-qt4-devel
 BuildRequires:	pkgconfig(icu-i18n)
 
-Requires:	PyQt4
+Requires:	python2-qt4
 Requires:	mupen64plus >= 2.0
 
 %description
