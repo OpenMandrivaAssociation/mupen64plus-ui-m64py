@@ -21,7 +21,7 @@ BuildRequires:	python2-qt4-network
 BuildRequires:	python2-qt4-opengl
 BuildRequires:	python2-qt4-script
 BuildRequires:	python2-qt4-scripttools
-
+BuildRequires:	python2-sip
 BuildRequires:	python-qt4-devel
 BuildRequires:	pkgconfig(icu-i18n)
 
