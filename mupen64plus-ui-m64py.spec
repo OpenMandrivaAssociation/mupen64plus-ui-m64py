@@ -10,7 +10,7 @@ Version:	0.2.1
 Release:	2
 License:	GPLv3+
 Group:		Emulators
-Url:		http://m64py.sourceforge.net
+Url:		https://m64py.sourceforge.net
 Source0:	http://sourceforge.net/projects/m64py/files/%{oname}-%{version}/%{oname}-%{version}.tar.gz
 BuildRequires:	python2-setuptools
 BuildRequires:	python2-devel
